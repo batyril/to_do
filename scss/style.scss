@@ -1,23 +1,38 @@
 
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
 .to_do_list{
     padding: 50px;
     min-height: 688px;
+    background: rgb(238,174,202);
+    background: linear-gradient(137deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     .container{
         padding-top: 25px;
         padding-bottom: 25px;
         width: 550px;
-        background-color:rgba(208, 246, 208, 0.507);
+        background: white;
         border-radius: 6px;
         margin: 0 auto;
+        .to_do_title{
+            display: flex;
+            justify-content: center;
+            font-size: 40px;
+            font-weight: lighter;
+            margin: 0;
+            margin-bottom: 30px;
+        }
         .to_do_list_high{
             .high_text{
                 font-size: 18px;
                 color: rgb(0, 0, 0);
                 text-align: center;
+                text-transform: uppercase;
+                margin-bottom: 20px;
             }
             .hight_new_task{
                 margin-top: 12px;
@@ -31,6 +46,8 @@
                     border-radius: 6px;
                     border: solid 1px rgb(152, 152, 152);
                     background-color: rgb(255, 255, 255);
+                    font-size: 20px;
+                    color: #94bbe9;
                 }
             }
             .hight_block{
@@ -54,6 +71,7 @@
                 background-color: rgb(255, 255, 255); 
                 p{
                     align-self: flex-start;
+                    line-height: 50px;
                     width: 370px;
                 }
                 .close{
@@ -61,6 +79,10 @@
                     align-self: flex-start;
                     cursor: pointer;
                 }
+            }
+            .hight_block:hover{
+                transform: scale(1.05);
+                transition: 0.5s;
             }
             .hight_block.checked{
                 background-color: rgb(218, 216, 216);
@@ -76,6 +98,8 @@
                 font-size: 18px;
                 color: rgb(0, 0, 0);
                 text-align: center;
+                text-transform: uppercase;
+                margin-bottom: 20px;
             }
             .low_new_task{
                 margin-top: 12px;
@@ -89,6 +113,8 @@
                     border-radius: 6px;
                     border: solid 1px rgb(152, 152, 152);
                     background-color: rgb(255, 255, 255);
+                    font-size: 20px;
+                    color: #94bbe9;
                 }
             }
             .low_block{
@@ -113,12 +139,17 @@
                 p{
                     align-self: flex-start;
                     width: 370px;
+                    line-height: 50px;
                 }
                 .close{
                     margin-top: 15px;
                     align-self: flex-start;
                     cursor: pointer;
                 }
+            }
+            .low_block:hover{
+                    transform: scale(1.05);
+                    transition: 0.5s;
             }
             .low_block.checked{
                 background-color: rgb(218, 216, 216);

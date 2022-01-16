@@ -1,4 +1,6 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
@@ -6,19 +8,31 @@
 .to_do_list {
   padding: 50px;
   min-height: 688px;
+  background: #eeaeca;
+  background: linear-gradient(137deg, #eeaeca 0%, #94bbe9 100%);
 }
 .to_do_list .container {
   padding-top: 25px;
   padding-bottom: 25px;
   width: 550px;
-  background-color: rgba(208, 246, 208, 0.507);
+  background: white;
   border-radius: 6px;
   margin: 0 auto;
+}
+.to_do_list .container .to_do_title {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: lighter;
+  margin: 0;
+  margin-bottom: 30px;
 }
 .to_do_list .container .to_do_list_high .high_text {
   font-size: 18px;
   color: black;
   text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 .to_do_list .container .to_do_list_high .hight_new_task {
   margin-top: 12px;
@@ -33,6 +47,8 @@
   border-radius: 6px;
   border: solid 1px #989898;
   background-color: white;
+  font-size: 20px;
+  color: #94bbe9;
 }
 .to_do_list .container .to_do_list_high .hight_block {
   display: flex;
@@ -56,12 +72,17 @@
 }
 .to_do_list .container .to_do_list_high .hight_block p {
   align-self: flex-start;
+  line-height: 50px;
   width: 370px;
 }
 .to_do_list .container .to_do_list_high .hight_block .close {
   margin-top: 15px;
   align-self: flex-start;
   cursor: pointer;
+}
+.to_do_list .container .to_do_list_high .hight_block:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
 }
 .to_do_list .container .to_do_list_high .hight_block.checked {
   background-color: #dad8d8;
@@ -74,6 +95,8 @@
   font-size: 18px;
   color: black;
   text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 .to_do_list .container .to_do_list_low .low_new_task {
   margin-top: 12px;
@@ -88,6 +111,8 @@
   border-radius: 6px;
   border: solid 1px #989898;
   background-color: white;
+  font-size: 20px;
+  color: #94bbe9;
 }
 .to_do_list .container .to_do_list_low .low_block {
   display: flex;
@@ -112,11 +137,16 @@
 .to_do_list .container .to_do_list_low .low_block p {
   align-self: flex-start;
   width: 370px;
+  line-height: 50px;
 }
 .to_do_list .container .to_do_list_low .low_block .close {
   margin-top: 15px;
   align-self: flex-start;
   cursor: pointer;
+}
+.to_do_list .container .to_do_list_low .low_block:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
 }
 .to_do_list .container .to_do_list_low .low_block.checked {
   background-color: #dad8d8;
